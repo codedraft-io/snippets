@@ -1,0 +1,190 @@
+...
+...
+
+.xp-taskbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      #3775ba 0%,
+      #4890ec 10%,
+      #2762dd 20%,
+      #285dda 90%,
+      #1143ac 100%
+    )
+    center/cover no-repeat;
+}
+
+.xp-button {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  background-color: #319e32;
+  background: radial-gradient(circle, #319e32 0%, #319e32 100%) center/cover
+    no-repeat;
+  border-radius: 0 16px 16px 0;
+  position: relative;
+  box-shadow: 0 0 8px #000000, 0 0 8px #00000077 inset;
+
+  .button-text {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: italic;
+    text-shadow: 2px 2px 10px #000000;
+    letter-spacing: 1px;
+    margin-right: 16px;
+  }
+
+  .xp-logo {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transform: skew(-10deg);
+    margin-top: 12px;
+
+    .logo-flag {
+      width: 18px;
+      height: 18px;
+      position: absolute;
+    }
+
+    .red {
+      top: 0;
+      left: 0;
+    }
+
+    .red:before,
+    .blue:before {
+      content: "";
+      height: 8px;
+      width: 100%;
+      border-radius: 100% 60% 0 0;
+      position: absolute;
+      left: 0;
+      top: -8px;
+    }
+
+    .red:after,
+    .blue:after {
+      content: "";
+      height: 8px;
+      width: 100%;
+      border-radius: 100% 60% 0 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: #319e32;
+    }
+
+    .yellow:before,
+    .green:before {
+      content: "";
+      height: 8px;
+      width: 100%;
+      border-radius: 0 0 100% 60%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #319e32;
+    }
+
+    .yellow:after,
+    .green:after {
+      content: "";
+      height: 8px;
+      width: 100%;
+      border-radius: 0 0 100% 60%;
+      position: absolute;
+      left: 0;
+      top: 100%;
+    }
+
+    .red,
+    .red:before {
+      background: linear-gradient(
+        90deg,
+        #de641f,
+        #de832f 20%,
+        #d79d4c 40%,
+        #de8430 60%,
+        #df6420 70%,
+        #bb4d20 80%,
+        #a53624 90%,
+        #a53624
+      );
+    }
+
+    .yellow {
+      top: 10px;
+      left: 20px;
+    }
+
+    .yellow,
+    .yellow:after {
+      background: linear-gradient(
+        90deg,
+        #de641f,
+        #de832f 20%,
+        #d79d4c 40%,
+        #de8430 60%,
+        #df6420 70%,
+        #bb4d20 80%,
+        #a53624 90%,
+        #a53624
+      );
+    }
+
+    .green {
+      top: -10px;
+      left: 20px;
+      z-index: 1;
+    }
+
+    .green,
+    .green:after {
+      background: linear-gradient(
+        90deg,
+        #7faa2a,
+        #85c12d 8%,
+        #85c12d 55%,
+        #7faa2a 60%,
+        #76802f 80%,
+        #4a582a 90%,
+        #4a582a
+      );
+    }
+
+    .blue {
+      top: 20px;
+      left: 0;
+    }
+
+    .blue,
+    .blue:before {
+      background: linear-gradient(
+        90deg,
+        #2e328e,
+        #5b75b8 8%,
+        #8097cc 30%,
+        #5174b8 60%,
+        #4057a5 70%,
+        #324399 80%,
+        #2e3280 90%,
+        #2e3280
+      );
+    }
+  }
+}
+
+.xp-button:hover {
+  filter: brightness(1.15);
+}
+
+.xp-button:active {
+  filter: brightness(1.3);
+}
